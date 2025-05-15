@@ -1,27 +1,17 @@
-
 # GOLDROOT Auto Info Bot
 
-A Telegram bot that auto-posts info to your group based on text content.
+Simple Telegram bot that posts messages from `info.txt` to a Telegram group using `TELEGRAM_BOT_TOKEN` and `CHAT_ID`.
 
-### Features
-- Auto-send messages from `info.txt`
-- Tracks sent messages using `posted.txt`
-- Minimal config using Railway
-- Perfect for project announcements like GOLDROOT
+### How it works:
+- Add messages to `info.txt`
+- Bot will post them (once) to your group
+- Sent messages are logged in `posted.txt`
 
----
+### Deploy Instructions:
+1. Deploy on Railway
+2. Add 2 variables:
+   - TELEGRAM_BOT_TOKEN
+   - CHAT_ID
+3. Bot will check `info.txt` every 60 seconds and send new lines
 
-### Deploy on Railway
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/anu877/goldroot-info-bot)
-
----
-
-### How to Use
-
-1. Add your `TELEGRAM_BOT_TOKEN` in Railway Variables
-2. Deploy the project
-3. Add your bot to your Telegram group and make it an admin
-4. Edit `info.txt` in Railway Files tab to include your update messages
-
-Created for the GOLDROOT Project.
+Created for the GOLDROOT project.

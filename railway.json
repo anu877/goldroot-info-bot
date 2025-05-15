@@ -1,9 +1,6 @@
-
 {
   "build": {
-    "env": {
-      "PYTHONUNBUFFERED": "1"
-    }
+    "env": {}
   },
   "deploy": {
     "startCommand": "python bot.py"
